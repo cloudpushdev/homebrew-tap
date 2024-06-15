@@ -11,7 +11,7 @@ class Cloudpush < Formula
   on_macos do
     on_intel do
       url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_x86_64.tar.gz"
-      sha256 "0c4932b2373e764601dce2fcea533c6b2e7ff1fdf1fe9358d6e35a2a40c13b60"
+      sha256 "1ebb4691eaf084f664c4df49b9573886c6d5052f27dfeb7307657f3b9ce83243"
 
       def install
         bin.install "cloudpush"
@@ -19,7 +19,7 @@ class Cloudpush < Formula
     end
     on_arm do
       url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_arm64.tar.gz"
-      sha256 "49a73fd79c028b6bb57bf5ff8425ee14f16328e3341cd5020950440be9459d3e"
+      sha256 "fffbef26cb7e1eeba51c2db6eb8f605714e0c6c2ff13716c3a5e74bb3aca868e"
 
       def install
         bin.install "cloudpush"
@@ -31,7 +31,7 @@ class Cloudpush < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_x86_64.tar.gz"
-        sha256 "9ea79cb29d424d10efc6827350ce0b17b25f000bdd7d700660d943d0cfb4b87c"
+        sha256 "f37976d08cd2764609a22c7de44849814d9f4807c7927404a16b70744cc1116b"
 
         def install
           bin.install "cloudpush"
@@ -41,7 +41,7 @@ class Cloudpush < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_armv6.tar.gz"
-        sha256 "04d547c44c3fa69862a26f6462156a8495c7c431a41201a12f577b81f0dc5e1a"
+        sha256 "beb2638d9e4d705df04cab7beb6e7ba76da2a5d8db4e12e5e78d940fd3e6381b"
 
         def install
           bin.install "cloudpush"
@@ -51,7 +51,7 @@ class Cloudpush < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_arm64.tar.gz"
-        sha256 "04473a258cb2885c887d82aae1337a0eca520699c779e37acbb49e004c1463e2"
+        sha256 "95e328bcb83449bc47787d75eb77d9a075727714cded9f852d9819d967ccfdfc"
 
         def install
           bin.install "cloudpush"
