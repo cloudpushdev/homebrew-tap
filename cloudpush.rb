@@ -10,19 +10,19 @@ class Cloudpush < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cli_Darwin_x86_64.tar.gz"
-      sha256 "8d4faecf4c4f0bac37947dfa115919731bb6cb22bf9e4c201edf62237555dd05"
+      url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_x86_64.tar.gz"
+      sha256 "c5910d3b314dbb83c450a1847f5e370fe95a4f2a7f9ad796bc945bc8538891a0"
 
       def install
-        bin.install "cli"
+        bin.install "cloudpush"
       end
     end
     on_arm do
-      url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cli_Darwin_arm64.tar.gz"
-      sha256 "2fd94623ab01a8163dec3fd0b0a623670773c34b48a24809611161d2c06a4f59"
+      url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_arm64.tar.gz"
+      sha256 "d02acc7e9745e68157111de7b939073769c1180185d69b7791d0e8be654c6f0a"
 
       def install
-        bin.install "cli"
+        bin.install "cloudpush"
       end
     end
   end
@@ -30,21 +30,21 @@ class Cloudpush < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cli_Linux_x86_64.tar.gz"
-        sha256 "f291a7fc2480c18f1b42c365d952d18ca65b6f933529a375252060d5c8600b22"
+        url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_x86_64.tar.gz"
+        sha256 "b42f3ab1892f0fc66572211ea4fcdcc8675423e233f72a3bd33aaff41c1234b9"
 
         def install
-          bin.install "cli"
+          bin.install "cloudpush"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cli_Linux_arm64.tar.gz"
-        sha256 "7340a34211bf7ed68bbeed30e8157c05b843f616da416de1974627baa8036256"
+        url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_arm64.tar.gz"
+        sha256 "f3f59567065b79c5721eaf905a325875c57a90e9c8113758bb24a0ec02c10151"
 
         def install
-          bin.install "cli"
+          bin.install "cloudpush"
         end
       end
     end
