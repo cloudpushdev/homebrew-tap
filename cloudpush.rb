@@ -11,7 +11,7 @@ class Cloudpush < Formula
   on_macos do
     on_intel do
       url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_x86_64.tar.gz"
-      sha256 "6b6a8bbdd107c2808ada7958858013ebf23f920697f5a465184a5433a79d3fa6"
+      sha256 "2e3f14682236b65eee5a61f71257f411910d2b36394e4132c66a2ce6530a023b"
 
       def install
         bin.install "cloudpush"
@@ -19,7 +19,7 @@ class Cloudpush < Formula
     end
     on_arm do
       url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Darwin_arm64.tar.gz"
-      sha256 "9816d74e2c149edb329664ba1e5601610760cdd6a559d8e9cbfe38552309cc72"
+      sha256 "6a0f355c6299542adb98a58d11345f356fb663fd963adba7926d1c96d8cc6c00"
 
       def install
         bin.install "cloudpush"
@@ -31,7 +31,7 @@ class Cloudpush < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_x86_64.tar.gz"
-        sha256 "b0635bd3744396b0e8566e771bf9c46e862ff3cd1005b3c851d9bed20d226a22"
+        sha256 "fbc1891653b6c04c9e6fb661ab7f8224ef4cbee5eeaf20f754c14d03cba11158"
 
         def install
           bin.install "cloudpush"
@@ -41,7 +41,7 @@ class Cloudpush < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudpushdev/releases/releases/download/0.0.0/cloudpush_Linux_arm64.tar.gz"
-        sha256 "7714004dc8e400718a0d468b6083fb143eafa13e12fbefd93927e0056fcf2bed"
+        sha256 "a6f22d3788478623f00ae7055606a967052f154d2a0c9fb6335367f23809543c"
 
         def install
           bin.install "cloudpush"
